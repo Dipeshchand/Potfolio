@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Aestheticmoments wedding photography",
     description:
-      "Developed a responsive wedding photography portfolio website with modern UI/UX and a backend admin panel to upload and manage portfolio content dynamically. Focused on elegant design, smooth performance, and mobile responsiveness..",
+      "Developed a responsive wedding photography portfolio website with modern UI/UX and a backend admin panel to upload and manage portfolio content dynamically",
     image:Wedding,
     technologies: [
       "React",
