@@ -19,8 +19,7 @@ const About = () => {
             <span className="text-neutral-700">•</span>
 
             <p>
-              I’m Dipesh Chand — a Full Stack Developer with 1 year of
-              experience, focused on building clean, reliable and
+              I’m Dipesh Chand — a Full Stack Developer focused on building clean, reliable and
               user-friendly web applications.
             </p>
           </li>
