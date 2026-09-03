@@ -95,7 +95,7 @@ const Experience = () => {
                   </a>
                 </h3>
                 <p className="text-[13px] text-neutral-500">
-                  Application Support / SQL Intern - 1yr
+                  SQL & Database Operations Intern - 1yr
                 </p>
               </div>
 
