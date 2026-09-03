@@ -19,15 +19,16 @@ function App() {
       <SmoothScroll />
 
       <PageContainer>
-        <Cursor />
 
         <Navbar />
-
+        <main className="border-x border-neutral-200">
+        <Cursor />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        </main>
 
         <Footer />
       </PageContainer>

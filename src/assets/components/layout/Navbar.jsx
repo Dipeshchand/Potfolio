@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <header
-      className={`h-[55px] border-b px-5 ${
+      className={`h-[55px] border-y mt-5 border-neutral-200 px-5 ${
         darkMode
           ? "border-neutral-800 bg-neutral-950 text-white"
           : "border-neutral-200 bg-white text-black"
