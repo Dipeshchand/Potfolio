@@ -1,29 +1,30 @@
-import { Moon, Search, Sun, Volume2 } from "lucide-react";
+import { Search, Volume2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import VisitorCounter from "./VisitorCounter";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <header
-      className={`h-[55px] border-y mt-5 border-neutral-200 px-5 ${
+      className={`mt-5 h-[55px] border-y border-neutral-200 px-5 ${
         darkMode
           ? "border-neutral-800 bg-neutral-950 text-white"
           : "border-neutral-200 bg-white text-black"
       }`}
     >
       <div className="flex h-full items-center justify-between">
-
         {/* Logo */}
-        <Link 
-        to="/"
-        className="font-mono text-[16px] font-bold tracking-tight">
+        <Link
+          to="/"
+          className="font-mono text-[16px] font-bold tracking-tight"
+        >
           DIPESH
         </Link>
 
         {/* Navigation */}
         <nav className="flex items-center gap-4 text-sm">
-
-          <a
-            href="/projects"
+          {/* Projects */}
+          <Link
+            to="/projects"
             className={`transition-colors ${
               darkMode
                 ? "text-neutral-300 hover:text-white"
@@ -31,10 +32,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             }`}
           >
             Projects
-          </a>
+          </Link>
 
-          <a
-            href="/contact"
+          {/* Contact */}
+          <Link
+            to="/contact"
             className={`transition-colors ${
               darkMode
                 ? "text-neutral-300 hover:text-white"
@@ -42,10 +44,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             }`}
           >
             Contact
-          </a>
+          </Link>
 
           {/* Search */}
           <button
+            type="button"
             className={`flex items-center gap-2 rounded-full border px-3 py-1.5 ${
               darkMode
                 ? "border-neutral-700 text-neutral-400"
@@ -85,20 +88,20 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <Volume2 size={15} />
 
             {/* Dark mode button */}
-            {/* <button
+            {/* 
+            <button
               type="button"
               onClick={() => setDarkMode((prev) => !prev)}
               aria-label="Toggle dark mode"
               className="transition-transform hover:scale-110"
             >
-              {darkMode ? (
-                <Sun size={15} />
-              ) : (
-                <Moon size={15} />
-              )}
-            </button> */}
+              {darkMode ? <Sun size={15} /> : <Moon size={15} />}
+            </button>
+            */}
           </div>
 
+          {/* Visitor Counter */}
+          <VisitorCounter />
         </nav>
       </div>
     </header>
